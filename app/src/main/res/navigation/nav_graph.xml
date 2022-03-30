@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tab">
+    <fragment
+        android:id="@+id/alarmSetting_main"
+        android:name="com.example.studysns.AlarmSetting_main"
+        android:label="AlarmSetting_main" />
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.studysns.main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_alarmSetting_main"
+            app:destination="@id/alarmSetting_main" />
+        <action
+            android:id="@+id/action_main_to_tab"
+            app:destination="@id/tab" />
+        <action
+            android:id="@+id/action_main_to_imformation"
+            app:destination="@id/imformation" />
+        <action
+            android:id="@+id/action_main_to_imformation22"
+            app:destination="@id/imformation22" />
+        <action
+            android:id="@+id/action_main_to_imformation3"
+            app:destination="@id/imformation3" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab"
+        android:name="com.example.studysns.TabLayout_main"
+        android:label="fragment_tab"
+        tools:layout="@layout/fragment_tab" >
+        <action
+            android:id="@+id/action_tab_to_studyList1"
+            app:destination="@id/studyList1" />
+        <action
+            android:id="@+id/action_tab_to_studyList22"
+            app:destination="@id/studyList2" />
+        <action
+            android:id="@+id/action_tab_to_sutdyList3"
+            app:destination="@id/sutdyList3" />
+    </fragment>
+    <fragment
+        android:id="@+id/imformation"
+        android:name="com.example.studysns.imformation"
+        android:label="fragment_imformation"
+        tools:layout="@layout/fragment_imformation" />
+    <fragment
+        android:id="@+id/imformation22"
+        android:name="com.example.studysns.imformation2"
+        android:label="fragment_imformation2"
+        tools:layout="@layout/fragment_imformation2" />
+    <fragment
+        android:id="@+id/imformation3"
+        android:name="com.example.studysns.imformation3"
+        android:label="fragment_imformation3"
+        tools:layout="@layout/fragment_imformation3" />
+    <fragment
+        android:id="@+id/studyList1"
+        android:name="com.example.studysns.studyList1"
+        android:label="fragment_study_list1"
+        tools:layout="@layout/fragment_study_list1" />
+    <fragment
+        android:id="@+id/studyList2"
+        android:name="com.example.studysns.studyList2"
+        android:label="fragment_study_list2"
+        tools:layout="@layout/fragment_study_list2" />
+    <fragment
+        android:id="@+id/sutdyList3"
+        android:name="com.example.studysns.studyList3"
+        android:label="fragment_sutdy_list3"
+        tools:layout="@layout/fragment_study_list3" />
+</navigation>

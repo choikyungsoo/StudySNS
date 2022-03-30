@@ -1,0 +1,101 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:iconSpaceReserved="false"
+    android:overScrollMode="ifContentScrolls"
+    app:iconSpaceReserved="false">
+
+    <SwitchPreferenceCompat
+        android:iconSpaceReserved="false"
+        app:defaultValue="true"
+        app:iconSpaceReserved="false"
+        app:key="sync"
+        app:title="@string/sync_title" />
+    <PreferenceCategory
+        android:iconSpaceReserved="false"
+        app:allowDividerAbove="false"
+        app:iconSpaceReserved="false"
+        app:title="@string/section1_header">
+
+        <ListPreference
+            android:iconSpaceReserved="false"
+            app:defaultValue="false"
+            app:dependency="sync"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:iconSpaceReserved="false"
+            app:key="reply"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:iconSpaceReserved="false"
+            app:defaultValue="no setting"
+            app:dependency="sync"
+            app:entries="@array/today_alarm"
+            app:entryValues="@array/today_value"
+            app:iconSpaceReserved="false"
+            app:key="list"
+            app:title="@string/timesetting_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:iconSpaceReserved="false"
+            app:defaultValue="no setting"
+            app:dependency="sync"
+            app:entries="@array/today_alarm"
+            app:entryValues="@array/today_value"
+            app:iconSpaceReserved="false"
+            app:key="list_preference_1"
+            app:title="@string/timesetting2_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:iconSpaceReserved="false"
+        app:iconSpaceReserved="false"
+        app:title="@string/section2_header">
+        <ListPreference
+            android:iconSpaceReserved="false"
+            app:defaultValue="on"
+            app:dependency="sync"
+            app:entries="@array/alaram_entries"
+            app:entryValues="@array/alaram_values"
+            app:iconSpaceReserved="false"
+            app:key="list_preference_2"
+            app:title="@string/alaramreply_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:iconSpaceReserved="false"
+            app:defaultValue="on"
+            app:dependency="sync"
+            app:entries="@array/alaram_entries"
+            app:entryValues="@array/alaram_values"
+            app:iconSpaceReserved="false"
+            app:key="list_preference_3"
+            app:title="@string/replyreply_title"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:iconSpaceReserved="false"
+        android:title="@string/section3_header"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:iconSpaceReserved="false"
+            android:overScrollMode="always"
+            android:scrollY="1400dp"
+            android:scrollbars="horizontal"
+            android:visibility="visible"
+            android:weightSum="1234"
+            app:dependency="sync"
+            app:iconSpaceReserved="false"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

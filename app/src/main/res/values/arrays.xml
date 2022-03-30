@@ -1,0 +1,90 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>시스템 기본값</item>
+        <item>꺼짐</item>
+        <item>켜짐</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>system_orginal</item>
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+     <!--시간설정-->
+    <string-array name="today_alarm">
+        <item>설정 안함</item>
+        <item>오전 12시</item>
+        <item>오전 1시</item>
+        <item>오전 2시</item>
+        <item>오전 3시</item>
+        <item>오전 4시</item>
+        <item>오전 5시</item>
+        <item>오전 6시</item>
+        <item>오전 7시</item>
+        <item>오전 8시</item>
+        <item>오전 9시</item>
+        <item>오전 10시</item>
+        <item>오전 11시</item>
+        <item>오후 12시</item>
+        <item>오후 1시</item>
+        <item>오후 2시</item>
+        <item>오후 3시</item>
+        <item>오후 4시</item>
+        <item>오후 5시</item>
+        <item>오후 6시</item>
+        <item>오후 7시</item>
+        <item>오후 8시</item>
+        <item>오후 9시</item>
+        <item>오후 10시</item>
+        <item>오후 11시</item>
+    </string-array>
+
+    <string-array name="today_value">
+        <item>no setting</item>
+        <item>am12</item>
+        <item>am1</item>
+        <item>am2</item>
+        <item>am3</item>
+        <item>am4</item>
+        <item>am5</item>
+        <item>am6</item>
+        <item>am7</item>
+        <item>am8</item>
+        <item>am9</item>
+        <item>am10</item>
+        <item>am11</item>
+        <item>pm12</item>
+        <item>pm1</item>
+        <item>pm2</item>
+        <item>pm3</item>
+        <item>pm4</item>
+        <item>pm5</item>
+        <item>pm6</item>
+        <item>pm7</item>
+        <item>pm8</item>
+        <item>pm9</item>
+        <item>pm10</item>
+        <item>pm11</item>
+    </string-array>
+
+    <string-array name="alaram_entries">
+        <item>꺼짐</item>
+        <item>켜짐</item>
+    </string-array>
+
+    <string-array name="alaram_values">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>test1</item>
+        <item>test2</item>
+        <item>test3</item>
+        <item>test4</item>
+        <item>test5</item>
+    </string-array>
+
+</resources>
